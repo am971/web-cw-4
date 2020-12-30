@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
   <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.gstatic.com/s/cairo/v9/SLXLc1nY6HkvalqKbI6O59Zea3ZlqSo.woff2) format('woff2'">
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>بطاقتي التعريفية</title>
     <!--  قم بربط هذه الصفحة  مع css -->
     <!--  ربط google fonts -->
+    <style>
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cairo/v9/SLXLc1nY6HkvalqKbI6O59Zea3ZlqSo.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+    </style>
   </head>
 
   <body>
     <nav>
       <div class="nav-elements">
-        <a href="#">هويّتي</a>
-        <a href="#">هواياتي</a>
+        <a href="#myid">هويّتي</a>
+        <a href="#myh">هواياتي</a>
       </div>
     </nav>
-    <h1>مرحباً، أنا طالب في مسار الويب</h1>
+    <h1 id="myid">مرحباً، أنا طالب في مسار الويب</h1>
     <h2>وسوف أنشئ بطاقتي التعريفية</h2>
 
     <!--------------------(البطاقة)-------------------->
@@ -25,13 +38,13 @@
       <img src="./img/kid.png" alt="person" />
 
       <!-------------------(البيانات)------------------>
-      <h1>اسمك</h1>
-      <h4>هواياتي المفضلة</h4>
+      <h1 >أمل</h1>
+      <h4 id= "myh">هواياتي المفضلة</h4>
 
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li>الرسم</li>
+        <li>التطريز</li>
+        <li>التعلم</li>
       </ul>
 
       <a href="https://code.kw/">
@@ -40,6 +53,10 @@
     </div>
     <!-------------------(الهوايات)------------------>
     <!-- قم بإضافة صور هواياتك هنا -->
-    <div class="hobbies"></div>
+    <div class="hobbies">
+      <img src="./img/da853f500d74500cd03aea4e37af39af.jpg" >
+      <img src="./img/12-staedtler-mars-lumograph-100-bleistifte-2h-310211.jpg" >
+      <img src="./img/12-staedtler-mars-lumograph-100-bleistifte-2h-310211.jpg" >
+    </div>
   </body>
 </html>
